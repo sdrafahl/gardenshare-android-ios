@@ -1,10 +1,10 @@
-package hello.world
+package gardenshare
 
 import slinky.core._
 import slinky.core.annotations.react
 import slinky.native._
-
 import scala.scalajs.js.Dynamic.literal
+
 
 @react class App extends Component {
   type Props = Unit

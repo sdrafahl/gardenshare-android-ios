@@ -1,4 +1,4 @@
-package hello.world
+package gardenshare
 
 import slinky.hot
 
@@ -9,6 +9,11 @@ object Main {
   if (LinkingInfo.developmentMode) {
     hot.initialize()
   }
+
+  val cjlj = Cache.getItem("federatedInfo").toFuture.value
+  println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+  println(cjlj)
+  println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
   
   @JSExportTopLevel("app")
   val app = App.componentConstructor
